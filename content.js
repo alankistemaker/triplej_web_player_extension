@@ -1,12 +1,12 @@
 // content.js
 
 // Function to change the background color
-function changeBackgroundColor() {
-  document.body.style.backgroundColor = "black";
-}
+const changeBackgroundColour = (colour) => {
+  document.body.style.backgroundColor = colour;
+};
 
-const changeTextColour = () => {
-  document.body.style.color = "white";
+const changeTextColour = (colour) => {
+  document.body.style.color = colour;
 };
 
 const changeElementTextColour = (element, colour) => {
@@ -17,8 +17,8 @@ const changeElementTextColour = (element, colour) => {
 };
 
 const main = () => {
-  changeBackgroundColor();
-  changeTextColour();
+  changeBackgroundColor("black");
+  changeTextColour("white");
   changeElementTextColour("Song_songArtist__sD5_H", "white");
   changeElementTextColour("Song_songRelease__jYe_C", "white");
   changeElementTextColour("Song_songWrapper__PySLU", "black");
