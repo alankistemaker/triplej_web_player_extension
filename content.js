@@ -7,7 +7,9 @@ function changeBackgroundColor() {
 
 const changeBannerColour = () => {
   const banner = document.getElementsByClassName("nav");
-  banner.style.backgroundColor = "black";
+  if (banner.length > 0) {
+    banner[0].style.backgroundColor = "black";
+  }
 };
 
 // Call the function when the page is loaded
