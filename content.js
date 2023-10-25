@@ -41,6 +41,10 @@ function main() {
     "TimezoneSelect_timezoneSelect__FOAVh",
     "black"
   );
+  changeElementBackgroundColour(
+    "SisterStationsBanner_container__FM8Yt",
+    "black"
+  );
 }
 
 // Call the function when the page is loaded
