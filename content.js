@@ -11,8 +11,23 @@ function changeTextColour(colour) {
 
 function changeElementTextColour(element, colour) {
   const elements = document.getElementsByClassName(element);
+  if (elements.length == 0) {
+    console.log("No elements found with class " + element);
+    return;
+  }
   for (let i = 0; i < elements.length; i++) {
     elements[i].style.color = colour;
+  }
+}
+
+function changeElementBackgroundColour(element, colour) {
+  const elements = document.getElementsByClassName(element);
+  if (elements.length == 0) {
+    console.log("No elements found with class " + element);
+    return;
+  }
+  for (let i = 0; i < elements.length; i++) {
+    elements[i].style.backgroundColor = colour;
   }
 }
 
@@ -21,7 +36,7 @@ function main() {
   changeTextColour("white");
   changeElementTextColour("Song_songArtist__sD5_H", "white");
   changeElementTextColour("Song_songRelease__jYe_C", "white");
-  changeElementTextColour("Song_songWrapper__PySLU", "black");
+  changeElementBackgroundColour("Song_songWrapper__PySLU", "black");
 }
 
 // Call the function when the page is loaded
