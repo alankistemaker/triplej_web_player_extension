@@ -37,6 +37,10 @@ function main() {
   changeElementTextColour("Song_songArtist__sD5_H", "white");
   changeElementTextColour("Song_songRelease__jYe_C", "white");
   changeElementBackgroundColour("Song_songWrapper__PySLU", "black");
+  changeElementBackgroundColour(
+    "TimezoneSelect_timezoneSelect__FOAVh",
+    "black"
+  );
 }
 
 // Call the function when the page is loaded
