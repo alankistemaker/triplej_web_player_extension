@@ -5,5 +5,11 @@ function changeBackgroundColor() {
   document.body.style.backgroundColor = "black";
 }
 
+const changeBannerColour = () => {
+  const banner = document.getElementsByClassName("nav");
+  banner.style.backgroundColor = "black";
+};
+
 // Call the function when the page is loaded
 window.addEventListener("load", changeBackgroundColor);
+window.addEventListener("load", changeBannerColour);
