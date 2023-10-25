@@ -17,7 +17,7 @@ function changeElementTextColour(element, colour) {
 }
 
 function main() {
-  changeBackgroundColor("black");
+  changeBackgroundColour("black");
   changeTextColour("white");
   changeElementTextColour("Song_songArtist__sD5_H", "white");
   changeElementTextColour("Song_songRelease__jYe_C", "white");
